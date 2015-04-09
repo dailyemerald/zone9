@@ -1,1 +1,36 @@
-my page
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8"></meta>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zone 9</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <img style="position: absolute;" src="img/Flag.png">
+  <div class="parallax">
+    <div id="group4" class="parallax__group">
+      <div class="parallax__layer parallax__layer--fore">
+        <div class="title"><img src="img/pencil.png"></div>
+      </div>
+      <div class="parallax__layer parallax__layer--base">
+        <div class="title"><img src="img/pen.png"></div>
+      </div>
+      <div class="parallax__layer parallax__layer--back">
+        <div class="title">Background Layer</div>
+      </div>
+      <div class="parallax__layer parallax__layer--deep">
+        <div class="title">Deep Background Layer</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var debugInput = document.querySelector("input");
+    function updateDebugState() {
+        document.body.classList.toggle('debug-on', debugInput.checked);
+    }
+    debugInput.addEventListener("click", updateDebugState);
+    updateDebugState();
+  </script>
