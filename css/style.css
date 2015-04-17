@@ -126,13 +126,44 @@
   .theStory {
     display: block;
     position: relative;
-    margin: 3% 35% 3% 5%;
+    margin: 3% 35% 0 5%;
     float: left;
   }
 
+  .one {
+    margin: 3% 35% 3% 5%;
+  }
+
+  .two {
+    margin: 3% 35% 3% 5%;
+  }
+
   .inserts {
-    margin: 4% 0 4% 0;
+    margin: 4% 0 0 0;
     position: relative;
+  }
+
+  .pull {
+    position: absolute;
+    font-size: 250%;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: rgba(0,0,0,1);
+  }
+
+  .pull:hover {
+    color: rgba(0,0,0,0.6);
+  }
+
+  .first {
+    top: 240%;
+    left: 73%;
+  }
+
+  .second {
+    top: 388%;
+    left: 73%;
   }
 
   .full {
