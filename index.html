@@ -29,46 +29,39 @@
             <!-- end share-buttons -->
         </div>
         <!-- end ontop -->
-  </div> <!-- end row -->      
-  <img style="position: absolute;" src="img/flagbg.png" width="100%" height="100%">
-  <div class="parallax">
-    <div id="group4" class="parallax__group">
-      <div class="parallax__layer parallax__layer--base">
+  </div> <!-- end row --> 
+  <header>
+  <div id="one">     
+  <img src="img/flagbg.png" width="100%" height="100%">
+  </div> 
+
+    <div id="two">
         <div class="title"><img src="img/penpencilmic.png"></div>
       </div>
-      </div>
     
-      <div id="group5" class="parallax__group">
-      <div class="parallax__layer parallax__layer--back">
+      <div id="three">
         <div class="title"><img src="img/chain1.png"></div>
       </div>
-    </div>
 
-     <div id="group6" class="parallax__group">
-      <div class="parallax__layer parallax__layer--deep">
+     <div id="four">
         <div class="title"><img src="img/chain2.png"></div>
-      </div>
     </div>
 
-     <div id="group7" class="parallax__group">
-      <div class="parallax__layer parallax__layer--base">
+     <div id="five">
         <div class="title"><img src="img/chain3.png"></div>
-      </div>
     </div>
 
-    <div id="group8" class="parallax__group">
-      <div class="parallax__layer parallax__layer--back">
+    <div id="six">
         <div class="title"><img src="img/chain4.png"></div>
-      </div>
     </div>
 
-    <div id="group9" class="parallax__group">
-      <div class="parallax__layer parallax__layer--deep">
+    <div id="seven">
         <div class="title"><img src="img/chain5.png"></div>
-      </div>
     </div>
-  </div>
 
+  </div>
+ </header> 
+<div class="wrapper">
 <div class="row">
   <div class="col-md-1"></div>
 <h1 class="col-md-9"> ZONE 9: </h1>
@@ -186,5 +179,59 @@
   </p>
 </div>
 </div>
+</div> <!-- end wrapper -->
+<script>
+(function(window){
+$.fn.stopAtTop= function () {
+    var $this = this,
+        $window = $(window),
+        thisPos = $this.offset().top,
+        //thisPreservedTop = $this.css("top"),
+        setPosition,
+        under,
+        over;
+
+    under = function(){
+        if ($window.scrollTop() < thisPos) {
+            $this.css({
+                position: 'absolute',
+                top: ""
+            });
+            setPosition = over;
+        }
+    };
+    
+    over = function(){
+        if (!($window.scrollTop() < thisPos)){
+            $this.css({
+                position: 'fixed',
+                top: 0
+            });
+            setPosition = under;
+        }
+    };
+    
+    setPosition = over;
+    
+    $window.resize(function()
+    {
+        bumperPos = pos.offset().top;
+        thisHeight = $this.innerHeight();
+        setPosition();
+    });
+    
+    $window.scroll(function(){setPosition();});
+    setPosition();
+};
+})(window);
+
+$('#one').stopAtTop();
+$('#two').stopAtTop();
+$('#three').stopAtTop();
+$('#four').stopAtTop();
+$('#five').stopAtTop();
+$('#six').stopAtTop();
+$('#seven').stopAtTop();
+</script>
 </body>
 </html>
