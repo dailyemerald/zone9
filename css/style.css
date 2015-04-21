@@ -32,22 +32,22 @@
     top:0%;
 }
 #two {
-    top:50%;
-}
-#three {
     top:100%;
 }
-#four {
-    top:150%;
-}
-#five {
+#three {
     top:200%;
 }
+#four {
+    top:300%;
+}
+#five {
+    top:400%;
+}
 #six {
-    top:250%;
+    top:500%;
 }
 #seven {
-    top:300%;
+    top:600%;
 }
 
 .wrapper {
