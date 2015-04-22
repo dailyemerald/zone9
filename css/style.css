@@ -34,16 +34,24 @@ header {
   bottom: 0;
   right: 0;
   left: 0;
-  display: inline-block; 
 }
 
-#one, #two, #three, #four, #five, #six, #seven
+.nesters {
+  position: relative;
+
+}
+
+.topimg {
+  width: 100%;
+  position: absolute;
+}
+
+#one, #two, #three, #four, #five, #six, #seven, #eight
 {
     padding: 0px;
     margin: 0px;
     width: 100%; 
     height:100%;
-    position:absolute;
     background: transparent;
     overflow: hidden;
     display: inline-block;
@@ -59,20 +67,19 @@ header {
     top:200%;
 }
 #four {
-    top:200%;
+    top:100%;
 }
 #five {
     top:200%;
 }
 #six {
-    top:200%;
+    top:300%;
 }
 #seven {
-    top:400%;
+    top:300%;
 }
-
-.title {
-    margin: -18% 0 0 -20%;
+#eight {
+    top: 300%;
 }
 
 .wrapper {
@@ -118,9 +125,7 @@ header {
     color: rgba(0,0,0,1);
   }
 
-  .side {
-    margin-top: 300%; 
-  }
+ 
 
   .subtitle {
     font-size: 11px;

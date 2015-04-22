@@ -31,34 +31,41 @@
   </div> <!-- end row --> 
   <header>
     <div class="nest">
-      
-
       <div class="nesters">
-          <div id="two">
-              <div class="title"><img src="img/penpencilmic.png"></div>
+        
+          <div id="one">
+              <img class="topimg" src="img/flagbg.png">
           </div>
           
+          <div id="two">
+              <img class="topimg" src="img/penpencilmic.png">
+          </div>
+
           <div id="three">
-              <div class="title"><img src="img/chain1.png"></div>
+              <img class="topimg" src="img/chain1.png">
           </div>
 
           <div id="four">
-              <div class="title"><img src="img/chain2.png"></div>
+              <img class="topimg" src="img/chain2.png">
           </div>
 
           <div id="five">
-              <div class="title"><img src="img/chain3.png"></div>
+              <img class="topimg" src="img/chain3.png">
           </div>
 
           <div id="six">
-              <div class="title"><img src="img/chain4.png"></div>
+              <img class="topimg" src="img/chain4.png">
           </div>
 
           <div id="seven">
-              <div class="title"><img src="img/chain5.png"></div>
+              <img class="topimg" src="img/chain5.png">
+          </div>
+
+          <div id="eight">
+              <img class="topimg" src="img/titletext.png">
           </div>
       </div> <!-- nesters -->
-    </div>
+    </div> <!-- end nest -->
  </header> 
 <div class="wrapper">
 
@@ -318,57 +325,57 @@
 
 </div> <!-- end wrapper -->
 <script>
-// (function(window){
-// $.fn.stopAtTop= function () {
-//     var $this = this,
-//         $window = $(window),
-//         thisPos = $this.offset().top,
-//         //thisPreservedTop = $this.css("top"),
-//         setPosition,
-//         under,
-//         over;
+var stopAtTop = function () {
+    var $this = this,
+        $container = $('.nesters'),
+        thisPos = $this.offset().top,
+        //thisPreservedTop = $this.css("top"),
+        setPosition,
+        under,
+        over;
 
-//     under = function(){
-//         if ($window.scrollTop() < thisPos) {
-//             $this.css({
-//                 position: 'absolute',
-//                 top: ""
-//             });
-//             setPosition = over;
-//         }
-//     };
+    under = function(){
+        if ($container.scrollTop() < thisPos) {
+            $this.css({
+                position: 'absolute',
+                top: ""
+            });
+            setPosition = over;
+        }
+   
     
-//     over = function(){
-//         if (!($window.scrollTop() < thisPos)){
-//             $this.css({
-//                 position: 'fixed',
-//                 top: 0
-//             });
-//             setPosition = under;
-//         }
-//     };
+    over = function(){
+        if (!($container.scrollTop() < thisPos)){
+            $this.css({
+                position: 'fixed',
+                top: 0
+            });
+            setPosition = under;
+        }
+    };
     
-//     setPosition = over;
+    setPosition = over;
     
-//     $window.resize(function()
-//     {
+    $container.resize(function()
+    {
         
-//         thisHeight = $this.outerHeight();
-//         setPosition();
-//     });
+        thisHeight = $this.outerHeight();
+        setPosition();
+    });
     
-//     $window.scroll(function(){setPosition();});
-//     setPosition();
-// };
-// })(window);
+    $container.scroll(function(){setPosition();});
+    setPosition();
+};
 
-// $('#one').stopAtTop();
-// $('#two').stopAtTop();
-// $('#three').stopAtTop();
-// $('#four').stopAtTop();
-// $('#five').stopAtTop();
-// $('#six').stopAtTop();
-// $('#seven').stopAtTop();
-// </script> 
+$('#one').stopAtTop();
+$('#two').stopAtTop();
+$('#three').stopAtTop();
+$('#four').stopAtTop();
+$('#five').stopAtTop();
+$('#six').stopAtTop();
+$('#seven').stopAtTop();
+$('#eight').scrollTop();
+};
+</script> 
 </body>
 </html>
