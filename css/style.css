@@ -4,10 +4,7 @@ html,body,div {
   margin: 0;
   padding: 0;
   width: 100%;
-}
-
-.head {
-  background-image: url("img/flagbg.png");
+  overflow-x: hidden;
 }
 
 #ontop {
@@ -121,6 +118,18 @@ header {
     color: rgba(0,0,0,1);
   }
 
+  .side {
+    margin-top: 300%; 
+  }
+
+  .subtitle {
+    font-size: 11px;
+  }
+
+  .next {
+    margin-top: -0.25%; 
+  }
+
   .second {
     margin-top: 25%;
   }
@@ -130,7 +139,7 @@ header {
   }
   
   .third {
-    margin-top: 40%;
+    margin-top: 45%;
   }
 
   .pull:hover {
