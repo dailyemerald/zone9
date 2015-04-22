@@ -111,14 +111,6 @@ header {
     font-size: 17px;
   }
 
-  .one {
-    margin: 3% 0 3% 0;
-  }
-
-  .two {
-    margin: 3% 0 3% 0;
-  }
-
   .pull {
     position: absolute;
     font-size: 100%;
@@ -130,15 +122,15 @@ header {
   }
 
   .second {
-    margin: 25% 0 0 0;
+    margin-top: 25%;
   }
   
   .first {
-    margin: 15% 0 0 0;
+    margin-top: 15%;
   }
   
   .third {
-    margin: 40% 0 0 0;
+    margin-top: 40%;
   }
 
   .pull:hover {
