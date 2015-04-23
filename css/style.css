@@ -65,6 +65,10 @@ html,body,div {
     margin-top: 50%; 
   }
 
+  .side1 {
+    margin-top: 150%;
+  }
+
   #subhead {
     font-weight: bold;
     font-size: 30px;
@@ -122,6 +126,11 @@ html,body,div {
   a {
     color: rgb(227,14,0) !important; 
     text-decoration: none;
+  }
+
+  .cap {
+    font-size: 100%;
+    margin-left: 2.5%;
   }
 
 
