@@ -29,10 +29,9 @@
             </div> <!-- end share-buttons -->
         </div> <!-- end ontop -->
   </div> <!-- end row --> 
-  <header>
     <div class="nest">
       <div class="nesters">
-        
+        <div class="spacer"></div>
           <div id="one">
               <img class="topimg" src="img/flagbg.png">
           </div>
@@ -66,7 +65,8 @@
           </div>
       </div> <!-- nesters -->
     </div> <!-- end nest -->
- </header> 
+
+
 <div class="wrapper">
 
 <div class="row">
@@ -100,7 +100,7 @@
       </div>
         <div class="col-md-1 col-sm-1 col-xs-1"></div>
           <div class="col-md-3 pull first">  
-               <a href="http://trialtrackerblog.org/2014/08/16/the-unsettling-testimony-of-befekadu/"> “In Maeklawi, the driving principle of police interrogations is ‘you are guilty unless proven otherwise’. Your pleas for innocence or explanation for that matter fell on deaf ears; detectives will cook a crime for you; I call this Maeklawi-sque interrogations.”
+               <a href="http://trialtrackerblog.org/2014/08/16/the-unsettling-testimony-of-befekadu/"> “In Maeklawi, the driving principle of police interrogations is ‘you are guilty unless proven otherwise”
                 <br>
                 <br>
               - Befeqadu Hailu,  August 16, 2014
@@ -139,18 +139,8 @@
           <div class="col-md-1 col-sm-1 col-xs-1"></div>
             <div class="col-md-3 pull second">
                 <a href="http://trialtrackerblog.org/2014/09/01/for-thee/"> 
-                  Interrogation of Zelalem Kibret by police office at Maeklwai
-                  <br>
-                  <br>
-                  <em>“The police officer: What are your objectives as Zone9?</em>
-                  <br>
-                  <br>
-                  <em>Me: Our objective is clearly stated on our blog. Anyone who can read our blog can understand it. To put it shortly; it is to entertain different narratives in the country. We intended to engage the public with discussions. </em>
-                  <br>
-                  <br>
-                  <em>The police officer: That is a cover. Tell me your real intentions.</em>
-                  <br>
-                </a> 
+                  "The police officer... Tell me your real intentions"
+                  </a> 
           </div>  
 </div> <!-- end row -->
 
@@ -201,11 +191,6 @@
            </p>
         </div> <!-- thestory div -->
   <div class="col-md-1 col-sm-1 col-xs-1"></div>
-  <div class="col-md-3 col-sm-12 col-xs-12">
-    <img class="img-responsive side" src="img/Kerry.jpg">
-    <p class="subtitle"><em>Feleke and John Kerry in 2013</em></p>
-  </div> 
-</div>
 </div> <!-- end row -->  
   
 <div class="row">
@@ -249,13 +234,10 @@
           </p>
     </div> <!-- end thestory -->
      <div class="col-md-1 col-sm-1 col-xs-1"></div>
-            <div class="col-md-3 pull third">
-                <a href="http://trialtrackerblog.org/2014/09/01/for-thee/"> “ I spent the first 75 days in a 5m by 4 m room at Ethiopia’s crime investigation center called Maeklawi...The room does not have any opening for sunlight. There was continuous electric bulb light but when electricity supply interrupted they replace it with diesel generator. At times when the generator runs out of the diesel we are forced to stay in a complete darkness. No one is allowed to lighten the room using a candle or a torch.”
-                <br>
-                <br>
-                - Zelalem Kibret, September 1, 2014
-                </a> 
-            </div>  
+      <div class="col-md-3 col-sm-12 col-xs-12">
+    <img class="img-responsive side" src="img/Kerry.jpg">
+    <p class="subtitle"><em>Feleke and John Kerry in 2013</em></p>
+  </div>      
 </div> <!-- end row -->
 
 <div class="row">
@@ -263,12 +245,14 @@
     <div class="inserts col-md-7 col-sm-11 col-xs-11">
       <img class="img-responsive" src="img/classroom.jpg">
     </div> 
-</div> <!-- end row -->  
+</div> <!-- end row --> 
+
+ 
 
 <div class="row">
     <div class="col-md-1 col-sm-1 col-xs-1"></div>
       <div class="theStory col-md-7 col-sm-11 col-xs-11">
-      <span class="drop"><img src="img/dropcap-A.png" width="50px"></span>
+      <span class="drop"><img src="img/dropcap-A.png" width="65px"></span>
           <p>
             fter a cup of coffee, Chala likes to go to the public parks around Eugene. They are quiet, serene and perfect to write, read or study. “The ideas will just flow,” Chala said. There, he’s free to do, and say, whatever he pleases. It’s quite the contradiction to the lockjaw, censored streets of Ethiopia. 
             <br>
@@ -325,57 +309,7 @@
 
 </div> <!-- end wrapper -->
 <script>
-var stopAtTop = function () {
-    var $this = this,
-        $container = $('.nesters'),
-        thisPos = $this.offset().top,
-        //thisPreservedTop = $this.css("top"),
-        setPosition,
-        under,
-        over;
 
-    under = function(){
-        if ($container.scrollTop() < thisPos) {
-            $this.css({
-                position: 'absolute',
-                top: ""
-            });
-            setPosition = over;
-        }
-   
-    
-    over = function(){
-        if (!($container.scrollTop() < thisPos)){
-            $this.css({
-                position: 'fixed',
-                top: 0
-            });
-            setPosition = under;
-        }
-    };
-    
-    setPosition = over;
-    
-    $container.resize(function()
-    {
-        
-        thisHeight = $this.outerHeight();
-        setPosition();
-    });
-    
-    $container.scroll(function(){setPosition();});
-    setPosition();
-};
-
-$('#one').stopAtTop();
-$('#two').stopAtTop();
-$('#three').stopAtTop();
-$('#four').stopAtTop();
-$('#five').stopAtTop();
-$('#six').stopAtTop();
-$('#seven').stopAtTop();
-$('#eight').scrollTop();
-};
 </script> 
 </body>
 </html>

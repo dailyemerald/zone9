@@ -24,12 +24,8 @@ html,body,div {
     position: relative;
 }
 
-header {
-  position: relative;
-}
-
 .nest {
-  /*position: absolute;*/
+  position: relative;
   top: 0;
   bottom: 0;
   right: 0;
@@ -40,47 +36,24 @@ header {
   position: relative;
 
 }
-
+/*
 .topimg {
   width: 100%;
-  position: absolute;
-}
+  min-height: 100%;
+  height: 100%;
+  position: relative;
+}*/
 
-#one, #two, #three, #four, #five, #six, #seven, #eight
+/*#one, #two, #three, #four, #five, #six, #seven, #eight
 {
-    padding: 0px;
-    margin: 0px;
+    padding: 0 0 100px 0;
+    margin: 0;
     width: 100%; 
     height:100%;
     background: transparent;
     overflow: hidden;
     display: inline-block;
-}
-
-#one {
-    top:0%;
-}
-#two {
-    top:100%;
-}
-#three {
-    top:200%;
-}
-#four {
-    top:100%;
-}
-#five {
-    top:200%;
-}
-#six {
-    top:300%;
-}
-#seven {
-    top:300%;
-}
-#eight {
-    top: 300%;
-}
+}*/
 
 .wrapper {
    z-index: 9999;
@@ -88,8 +61,7 @@ header {
 }
 
 .drop {
-   font-size: 305%;
-   margin: -2% 1.5% 0 0;
+   margin: -0.5% 1.5% 0 0;
    float: left;
   }
 
@@ -97,6 +69,10 @@ header {
     margin: 1% 0 0 5%;
     padding: 0;
     font-size: 700%
+  }
+
+  .side {
+    margin-top: 50%; 
   }
 
   #subhead {
@@ -125,8 +101,6 @@ header {
     color: rgba(0,0,0,1);
   }
 
- 
-
   .subtitle {
     font-size: 11px;
   }
@@ -154,6 +128,31 @@ header {
   a {
     color: rgb(227,14,0) !important; 
     text-decoration: none;
+  }
+
+  #one {
+    position: absolute; 
+  }
+  #two {
+    position: absolute; 
+  }
+  #three {
+    position: absolute; 
+  }
+  #four {
+    position: absolute; 
+  }
+  #five {
+    position: absolute; 
+  }
+  #six {
+    position: absolute; 
+  }
+  #seven {
+    position: absolute;
+  }
+  #eight {
+    position: absolute;
   }
 
 
