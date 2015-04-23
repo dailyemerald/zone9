@@ -119,6 +119,28 @@ html,body,div {
     margin-top: 55%;
   }
 
+  @media screen and (max-width: 996px) {
+    .second {
+    margin-top: 0;
+    margin-bottom: 3%;
+  }
+  
+  .first {
+    margin-top: 0;
+    margin-bottom: 3.5%;
+  }
+  
+  .third {
+    margin-top: 0;
+    margin-bottom: 3%;
+  }
+
+  .side1 {
+    margin-top: 0;
+  }
+
+}
+
   .pull:hover {
     color: rgba(0,0,0,0.6);
   }
@@ -131,6 +153,10 @@ html,body,div {
   .cap {
     font-size: 100%;
     margin-left: 2.5%;
+  }
+
+  .story a {
+    color: #C1C1C1 !important;
   }
 
 
