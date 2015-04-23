@@ -54,6 +54,10 @@ html,body,div {
     font-size: 700%
   }
 
+.byline {
+  font-size: 150%;
+}  
+
   .side {
     margin-top: 50%; 
   }
