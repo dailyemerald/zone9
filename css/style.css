@@ -56,6 +56,9 @@ html,body,div {
 
 .byline {
   font-size: 150%;
+  margin-top: -2%;
+  margin-left: 1.5%; 
+  font-size: 100%;
 }  
 
   .side {
